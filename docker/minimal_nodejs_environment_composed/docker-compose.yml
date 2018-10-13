@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  app:
+    build: .
+    command: 'node index.js'
+    ports:
+      - 17001:80
+    restart: always
